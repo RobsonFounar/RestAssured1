@@ -1,0 +1,22 @@
+Observações nos TESTES:
+**API
+1- Swegger está totalmente desatualizado com chamdas atuais. Status Cod não corresponde com o que PostMan e testes retornam.
+2- Na parte de cadastro de Employee, o campo FirstName está escrito de forma errada.
+3- Imagino que os Status Cod estejam em desencontro com o que temos na referencial de padrão.
+Exemplo: Poderiamos padronizar a resposta 200 e 201, pra que quando receber no front saber tratar. 200 não tem body e 201 tem body de resposta.
+
+4 - Cadastro de Senha, e Funcionários, quando passado o campo vazio ele realiza o cadastro sem problemas. Não tem bloqueio de campo.
+	Cadastro passando Null também realiza o cadastro.
+	Cadastro de funcionário pode ser com os mesmos dados, sem validação se existe ou não.
+5 - Quando excluido o usuario ao Editar ele conta o usuario e nao pelo ID
+Exempo: Exclui o usuario 1 e quando passo o ID 1 ele altera o ID 2 identificando como ID 1( Provavel que pegue o PK Primary Key do banco).
+
+
+
+
+**Mobile (UI)
+Não realizei o teste automatizado do Mobile porque não consegui.Fiz somente testes de chamada manual.
+
+
+
+
